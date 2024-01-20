@@ -46,7 +46,15 @@ int main()
         game();
     }
     else {
-        return 0;
+        if (userInput == "Brian")
+        {
+            cout << "Have a great day Professor!";
+            return 0;
+        }
+        else {
+
+            return 0;
+        }
     }
 }
 

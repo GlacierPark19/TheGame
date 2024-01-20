@@ -9,6 +9,8 @@ Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
+		G++|x64 = G++|x64
+		G++|x86 = G++|x86
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
@@ -17,6 +19,10 @@ Global
 		{3E340A7E-1D62-4C23-B135-78F9E8EC2056}.Debug|x64.Build.0 = Debug|x64
 		{3E340A7E-1D62-4C23-B135-78F9E8EC2056}.Debug|x86.ActiveCfg = Debug|Win32
 		{3E340A7E-1D62-4C23-B135-78F9E8EC2056}.Debug|x86.Build.0 = Debug|Win32
+		{3E340A7E-1D62-4C23-B135-78F9E8EC2056}.G++|x64.ActiveCfg = G++|x64
+		{3E340A7E-1D62-4C23-B135-78F9E8EC2056}.G++|x64.Build.0 = G++|x64
+		{3E340A7E-1D62-4C23-B135-78F9E8EC2056}.G++|x86.ActiveCfg = G++|Win32
+		{3E340A7E-1D62-4C23-B135-78F9E8EC2056}.G++|x86.Build.0 = G++|Win32
 		{3E340A7E-1D62-4C23-B135-78F9E8EC2056}.Release|x64.ActiveCfg = Release|x64
 		{3E340A7E-1D62-4C23-B135-78F9E8EC2056}.Release|x64.Build.0 = Release|x64
 		{3E340A7E-1D62-4C23-B135-78F9E8EC2056}.Release|x86.ActiveCfg = Release|Win32
