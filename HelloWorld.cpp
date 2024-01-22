@@ -1,8 +1,12 @@
 // HelloWorld.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //This program was developed with assistance from W3 schools (w3schools.com/cpp)
+//Thank you to Ramzis and ST3 from StackOverflow: https://stackoverflow.com/questions/17347950/how-do-i-open-a-url-from-c
+
 
 #include <iostream>
 #include <string>
+#include <windows.h>
+#include <shellapi.h>
 using namespace std;
 string userInput;
 string choice;
@@ -40,6 +44,9 @@ void game() {
         if (choice == "Look") 
         {
             cout << "Finally, somebody made the correct choice. \nTo your north, is a house. To the South is a VOID OF DEATH (For now. TODO: add more game)\n";
+        }
+        if (choice == "Meme") {
+            ShellExecute(0, 0, "https://www.youtube.com/watch?v=dQw4w9WgXcQ", 0, 0, SW_SHOW);
         }
     }
 }
