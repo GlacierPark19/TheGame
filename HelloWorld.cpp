@@ -22,7 +22,7 @@ void game() {
     {
         cout << "You head north. There is a mailbox in front of you. You can continue North to reach a house.\n";
         getline(cin, choice);
-        if (choice.find("mailbox")) 
+        if (choice == "mailbox") 
         {
             cout << "Inside the mailbox, you find a flyer.\n";
             getline(cin, choice);
