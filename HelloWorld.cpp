@@ -7,6 +7,7 @@
 #include <string>
 #include <windows.h>
 #include <shellapi.h>
+#include "Music.h"
 using namespace std;
 string userInput;
 string choice;
@@ -72,7 +73,9 @@ void game() {
         }
         else {
 
-           //do something here at some point
+            cout << "HEHE CPU GOES BRRRRR\n";
+            double 
+
         }
     }
 }
