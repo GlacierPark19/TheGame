@@ -10,6 +10,7 @@ string choice;
 
 void game() {
     cout << "Hello User. Welcome to The Dungeon\n";
+    cout << "NOTE: Due to my ineptitude, this program is CASE SENSITIVE\n";
     cout << "This portion of the program is fully copyrighted. \n";
     cout << "What is your name Player?";
     getline(cin, userInput);
@@ -19,7 +20,17 @@ void game() {
     getline(cin, choice);
     if (choice == "North")
     {
-        cout << "TODO: More of the game";
+        cout << "You head north. There is a mailbox in front of you. You can continue North to reach a house.\n";
+        getline(cin, choice);
+        if (choice.find("mailbox")) 
+        {
+            cout << "Inside the mailbox, you find a flyer.\n";
+            getline(cin, choice);
+            if (choice.find("read") || choice.find("yes"))
+            {
+                cout << "This is the dungeon. Find the orb of Gaben and escape.\n Watch out for the Grue\n";
+                }
+        }
     }
     else {
         if (choice == "South")
