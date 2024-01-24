@@ -19,7 +19,7 @@ void game() {
     cout << "Hello User. Welcome to The Dungeon\n";
     cout << "NOTE: Due to my ineptitude, this program is CASE SENSITIVE\n";
     cout << "This portion of the program is fully copyrighted. \n";
-    cout << "What is your name Player?";
+    cout << "What is your name Player? ";
     //This block is where the actual game starts
     getline(cin, userInput);
     cout << "Thank you " << userInput << " for joining me today\n";
@@ -27,6 +27,7 @@ void game() {
     cout << "You can go North, South, or Look around\n";
     //This is where it gets intresting. Nested if loops and checks are the only way I know how to do this thing
     getline(cin, choice);
+    
     if (choice == "North")
     {  //the north if loop
         cout << "You head north. There is a mailbox in front of you. You can continue North to reach a house.\n";
@@ -69,13 +70,9 @@ void game() {
         if (userInput == "Brian")
         {
             cout << "Have a great day Professor!";
-            
         }
         else {
-
             cout << "HEHE CPU GOES BRRRRR\n";
-            double 
-
         }
     }
 }
