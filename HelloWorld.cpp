@@ -4,6 +4,7 @@
 
 
 #include <iostream>
+#include "libraries"
 #include <string>
 #include <windows.h>
 #include <shellapi.h>
@@ -22,6 +23,7 @@ void game() {
     cout << "What is your name Player? ";
     //This block is where the actual game starts
     getline(cin, userInput);
+    transform(userInp)
     cout << "Thank you " << userInput << " for joining me today\n";
     cout << "You are in a field. \nIt is getting dark. \nYou are likely to be eaten by a grue.\n";
     cout << "You can go North, South, or Look around\n";
