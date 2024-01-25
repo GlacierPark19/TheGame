@@ -16,6 +16,7 @@ string choice;
 string name;
 //Direction Declarations
 #include "north.cpp"
+#include "south.cpp"
 //Functions
 #include "functions.h"
 
@@ -34,15 +35,14 @@ void game() {
     //This is where it gets intresting. Nested if loops and checks are the only way I know how to do this thing
     takeInput();
     north();
-        if (choice == "south")
-        {
-            cout << "You stumble forward blindly, and break your nose on the Grue. He eats you. Game Over";
-        }
+    south();
+
+        
     if (choice == "look") 
         {
             cout << "Finally, somebody made the correct choice. \nTo your north, is a house. To the South is a VOID OF DEATH (For now. TODO: add more game)\n";
         }
-        if (choice == "meme") {
+    if (choice == "meme") {
         #if defined(__linux__) // Or #if __linux__
             //Do a meme here
         #elif _WIN32

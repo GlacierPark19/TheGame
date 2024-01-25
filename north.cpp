@@ -20,6 +20,6 @@ void north() {
         }
     }
     else {
-        //Do Nothing :)
+        //return to the game. No clue how to do this LOL.
     }
 }
