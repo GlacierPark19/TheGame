@@ -7,6 +7,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Game", "HelloWorld.vcxproj"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EC973598-6584-4808-A517-8C5C353D27BE}"
 	ProjectSection(SolutionItems) = preProject
+		death.h = death.h
 		functions.h = functions.h
 		north.cpp = north.cpp
 		south.cpp = south.cpp

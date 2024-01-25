@@ -13,10 +13,13 @@
 using namespace std;
 string userInput;
 string choice;
+float score;
 string name;
 //Direction Declarations
 #include "north.cpp"
 #include "south.cpp"
+//Deaths
+#include "death.h"
 //Functions
 #include "functions.h"
 
@@ -34,8 +37,14 @@ void game() {
     cout << "You can go North, South, or Look around\n";
     //This is where it gets intresting. Nested if loops and checks are the only way I know how to do this thing
     takeInput();
-    north();
-    south();
+    if (choice == "north")
+    {
+        north();
+}
+    if (choice == "south")
+    {
+        south();
+    }
 
         
     if (choice == "look") 

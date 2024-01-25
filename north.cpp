@@ -1,7 +1,6 @@
+/*This file handles all of the NORTH questline. Deaths will be sent to death.cpp
+*/
 void north() {
-
-    if (choice == "north")
-    {  //the north if loop
         cout << "You head north. There is a mailbox in front of you. You can continue North to reach a house.\n";
         cout << "You can also read the mail.\n";
         takeInput();
@@ -18,8 +17,5 @@ void north() {
             cout << "You enter the house. There are stairs to your Left. You can see a kitchen ahead, and a dark room to your right.\n";
             cout << "The place stinks of grue\n";
         }
-    }
-    else {
-        //return to the game. No clue how to do this LOL.
     }
 }
