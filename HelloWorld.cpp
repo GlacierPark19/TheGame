@@ -2,9 +2,9 @@
 //This program was developed with assistance from W3 schools (w3schools.com/cpp)
 //Thank you to Ramzis and ST3 from StackOverflow: https://stackoverflow.com/questions/17347950/how-do-i-open-a-url-from-c
 
-
 #include <iostream>
 #include "libraries.h"
+
 #include <string>
 #include "functions.h"
 #include <windows.h>
@@ -14,13 +14,10 @@ using namespace std;
 string userInput;
 string choice;
 string name;
-
-void takeInput() {
-    getline(cin, choice);
-    transform(choice.begin(), choice.end(), choice.begin(), ::towlower);
-    //This function fixes issues regarding capitilization.
-    //Hopefully this works :)
-}
+//Direction Declarations
+#include "north.cpp"
+//Functions
+#include "functions.h"
 
 void game() {
     //The main function of the program. This section will implement as much as I learn as possible. I will also have easter eggs once I learn how to launch a program with C++
@@ -36,31 +33,11 @@ void game() {
     cout << "You can go North, South, or Look around\n";
     //This is where it gets intresting. Nested if loops and checks are the only way I know how to do this thing
     takeInput();
-    if (choice == "north")
-    {  //the north if loop
-        cout << "You head north. There is a mailbox in front of you. You can continue North to reach a house.\n";
-        cout << "You can also read the mail.\n";
-        takeInput();
-            if (choice == "read") {
-                cout << "Thank you so much for stumbling upon my little game.\n The majority of this is Copyrighted using the GNU public licence.\n THis program uses many public libraries.\n";
-                cout << "Some sections of this game are not yet accessable.\n Sorry bout that...";
-                cout << "There is also a flyer. It reads:\n";
-                cout << "Shop LTTSTORE.com\n";
-                }
-        else {
-
-        }
-        if (choice == "north") {
-            cout << "You enter the house. There are stairs to your Left. You can see a kitchen ahead, and a dark room to your right.\n";
-            cout << "The place stinks of grue\n";
-        }
-    }
-    else {
+    north();
         if (choice == "south")
         {
             cout << "You stumble forward blindly, and break your nose on the Grue. He eats you. Game Over";
         }
-    }
     if (choice == "look") 
         {
             cout << "Finally, somebody made the correct choice. \nTo your north, is a house. To the South is a VOID OF DEATH (For now. TODO: add more game)\n";
@@ -77,12 +54,23 @@ void game() {
         }
 }
 
+
     int main()
 {
         cout << "Launching game...\n";
         cout << "Please Wait...\n";
         game();
-
 }
+
+
+
+
+
+    void takeInput() {
+        getline(cin, choice);
+        transform(choice.begin(), choice.end(), choice.begin(), ::towlower);
+        //This function fixes issues regarding capitilization.
+        //Hopefully this works :)
+    }
 
 
