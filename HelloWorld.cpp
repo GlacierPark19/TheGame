@@ -44,8 +44,7 @@ void game() {
             if (choice == "read") {
                 cout << "Thank you so much for stumbling upon my little game.\n The majority of this is Copyrighted using the GNU public licence.\n THis program uses many public libraries.\n";
                 cout << "Some sections of this game are not yet accessable.\n Sorry bout that...";
-                cout << "There is also 6+-
-                    8a flyer. It reads:\n";
+                cout << "There is also a flyer. It reads:\n";
                 cout << "Shop LTTSTORE.com\n";
                 }
         else {
