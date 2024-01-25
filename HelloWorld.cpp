@@ -44,7 +44,8 @@ void game() {
             if (choice == "read") {
                 cout << "Thank you so much for stumbling upon my little game.\n The majority of this is Copyrighted using the GNU public licence.\n THis program uses many public libraries.\n";
                 cout << "Some sections of this game are not yet accessable.\n Sorry bout that...";
-                cout << "There is also a flyer. It reads:\n";
+                cout << "There is also 6+-
+                    8a flyer. It reads:\n";
                 cout << "Shop LTTSTORE.com\n";
                 }
         else {
@@ -55,40 +56,34 @@ void game() {
             cout << "The place stinks of grue\n";
         }
     }
-        else {
-         if (choice == "South")
+    else {
+        if (choice == "South")
         {
             cout << "You stumble forward blindly, and break your nose on the Grue. He eats you. Game Over";
         }
-        if (choice == "Look") 
+    }
+    if (choice == "Look") 
         {
             cout << "Finally, somebody made the correct choice. \nTo your north, is a house. To the South is a VOID OF DEATH (For now. TODO: add more game)\n";
         }
         if (choice == "Meme") {
+        #if defined(__linux__) // Or #if __linux__
+            //Do a meme here
+        #elif _WIN32
             ShellExecute(0, 0, "https://www.youtube.com/watch?v=dQw4w9WgXcQ", 0, 0, SW_SHOW);
+        #else
+            //do a meme here.
+        #endif
+            
         }
-    }
 }
+
     int main()
 {
-    cout << "Hello World!\n";
-    cout << "This Program Copyright 2024 Trolololol Productions\n";
-    cout << "What is your name?\n";
-    getline(cin, userInput);
-    if (userInput == "Nobody")
-    {
+        cout << "Launching game...\n";
+        cout << "Please Wait...\n";
         game();
-        //This calls the game, which is the truly main program. This portion will be updated as I learn new things.
-    }
-    else {
-        if (userInput == "Brian")
-        {
-            cout << "Have a great day Professor!";
-        }
-        else {
-            cout << "HEHE CPU GOES BRRRRR\n";
-        }
-    }
+
 }
 
 
