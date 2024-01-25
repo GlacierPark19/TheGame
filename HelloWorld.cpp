@@ -56,16 +56,16 @@ void game() {
         }
     }
     else {
-        if (choice == "South")
+        if (choice == "south")
         {
             cout << "You stumble forward blindly, and break your nose on the Grue. He eats you. Game Over";
         }
     }
-    if (choice == "Look") 
+    if (choice == "look") 
         {
             cout << "Finally, somebody made the correct choice. \nTo your north, is a house. To the South is a VOID OF DEATH (For now. TODO: add more game)\n";
         }
-        if (choice == "Meme") {
+        if (choice == "meme") {
         #if defined(__linux__) // Or #if __linux__
             //Do a meme here
         #elif _WIN32
