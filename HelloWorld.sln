@@ -8,9 +8,11 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EC973598-6584-4808-A517-8C5C353D27BE}"
 	ProjectSection(SolutionItems) = preProject
 		death.h = death.h
+		definitions.h = definitions.h
 		functions.h = functions.h
 		north.cpp = north.cpp
 		south.cpp = south.cpp
+		vars.h = vars.h
 	EndProjectSection
 EndProject
 Global
@@ -27,8 +29,8 @@ Global
 		{3E340A7E-1D62-4C23-B135-78F9E8EC2056}.Debug|x64.Build.0 = Debug|x64
 		{3E340A7E-1D62-4C23-B135-78F9E8EC2056}.Debug|x86.ActiveCfg = Debug|Win32
 		{3E340A7E-1D62-4C23-B135-78F9E8EC2056}.Debug|x86.Build.0 = Debug|Win32
-		{3E340A7E-1D62-4C23-B135-78F9E8EC2056}.G++|x64.ActiveCfg = G++|x64
-		{3E340A7E-1D62-4C23-B135-78F9E8EC2056}.G++|x64.Build.0 = G++|x64
+		{3E340A7E-1D62-4C23-B135-78F9E8EC2056}.G++|x64.ActiveCfg = Debug|x64
+		{3E340A7E-1D62-4C23-B135-78F9E8EC2056}.G++|x64.Build.0 = Debug|x64
 		{3E340A7E-1D62-4C23-B135-78F9E8EC2056}.G++|x86.ActiveCfg = G++|Win32
 		{3E340A7E-1D62-4C23-B135-78F9E8EC2056}.G++|x86.Build.0 = G++|Win32
 		{3E340A7E-1D62-4C23-B135-78F9E8EC2056}.Release|x64.ActiveCfg = Release|x64

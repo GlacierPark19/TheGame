@@ -1,0 +1,2 @@
+void takeInput();
+void grue();

@@ -111,4 +111,10 @@
  #include <unordered_set>
 #endif
 
+#if defined (_WIN32)
+#include <windows.h> //Libraries for the memes.
+#include <shellapi.h>
+#endif
+
+
 
