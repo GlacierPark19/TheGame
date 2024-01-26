@@ -43,7 +43,7 @@ void game() {
 
             if (choice == "look")
             {
-                cout << "Finally, somebody made the correct choice. \nTo your north, is a house. To the South is a VOID OF DEATH (For now. TODO: add more game)\n";
+                cout << "Finally, somebody made the correct choice. \nTo your north, is a house. To the South is a Dark Forest. It smells.... Funky)\n";
                 return;
             }
         }
