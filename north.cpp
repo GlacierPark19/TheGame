@@ -10,20 +10,42 @@ void north() {
             cout << "Some sections of this game are not yet accessable.\n Sorry bout that...";
             cout << "There is also a flyer. It reads:\n";
             cout << "Shop LTTSTORE.com\n";
+            north();
            
         }
         else if (choice == "north") {
-            cout << "You enter the house. There are stairs to your Left. You can see a kitchen ahead, and a dark room to your right.\n";
-            cout << "The place stinks of grue\n";
+            house();
         }
-
-        else if (choice != "exit") {
-            cout << "Unrecognized Command.\n";
-            }
         else if (choice == "exit") {
             return;
         }
 
 
          }
+
+void stairsHouse() {
+
+}
+void kitchenHouse() {
+
+}
+void house() {
+    cout << "You enter the house. There are stairs to your Left. You can see a kitchen, and a dark room to your right.\n";
+    cout << "The place stinks of grue\n";
+    takeInput();
+    if (choice == "left")
+    {
+        stairsHouse();
+    }
+    else
+        if (choice == "right")
+        {
+            grueDeath();
+        }
+        else
+            if (choice == "kitchen")
+            {
+                kitchenHouse();
+            }
+}
 
