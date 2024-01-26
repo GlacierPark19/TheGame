@@ -8,7 +8,7 @@ using namespace std;
 //This section is for using external files. DO NOT place items AFTER the directions.
 //Deaths
 #include "death.h"
-//#include "grue.h" (NYI)
+#include "grue.h"
 //Functions
 #include "functions.h"
 #include "definitions.h"

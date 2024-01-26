@@ -10,6 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		death.h = death.h
 		definitions.h = definitions.h
 		functions.h = functions.h
+		grue.h = grue.h
 		north.cpp = north.cpp
 		south.cpp = south.cpp
 		vars.h = vars.h
