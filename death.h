@@ -13,4 +13,5 @@ void milkPaint() {
 	cout << "GAME OVER\n";
 	cout << "Your score is " << score << " points!" << endl;
 	cout << "Would you like to play again?\n";
+	main();
 }
