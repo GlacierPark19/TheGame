@@ -30,9 +30,9 @@ void game() {
     cout << "You can go North, South, or Look around\n";
     //This is where it gets intresting. Nested if loops and checks are the only way I know how to do this thing
     takeInput();
-    switch (choice) {
-    case north: north(); break;
-        printf("Error");
+    switch (choiceEnum) {
+    case 1: north(); case 2: south();  break;
+        printf("This dont exsist :(");
     }
   /*  if (choice == "north")
     {

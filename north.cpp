@@ -1,6 +1,10 @@
 /*This file handles all of the NORTH questline. Deaths will be sent to death.cpp
 * The *optional* Grue quest is handled by Grue.cpp. NYI
 */
+void house();
+void stairsHouse();
+void kitchenHouse();
+
 void north() {
         cout << "You head north. There is a mailbox in front of you. You can continue North to reach a house.\n";
         cout << "You can also read the mail.\n";

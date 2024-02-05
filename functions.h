@@ -5,5 +5,20 @@ void takeInput() {
 
     //This is where things get strange. In order to simplify my life, I am going to try enumeration
     //The function below *should* run with every takeInput, converting directions to an enumerated list thingy. 
-
+    if (choice == "north") {
+        choiceEnum = 1;
+   } else
+        if (choice == "south") {
+            choiceEnum = 2;
+        }else 
+            if (choice == "east") {
+                choiceEnum = 3;
+            }else
+                if (choice == "west") {
+                    choiceEnum = 4;
+                }
+                else
+                {
+                    //do literaly nothing for now IG
+                }
 }

@@ -4,5 +4,5 @@
 
 void grueQuest() {
 	cout << "Jeff looks at you with a confused look.\n";
-	cout << "He then looks over, and"
+	cout << "He then looks over, and eats your hat\n";
 }
