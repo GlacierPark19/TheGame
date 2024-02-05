@@ -27,7 +27,17 @@ void stairsHouse() {
 
 }
 void kitchenHouse() {
-
+    cout << "You enter the kitchen. There is a long table in front of you.\n There is a bag on the table.\n A bottle of what looks like Milk is on the counter\n";
+    takeInput();
+    if (choice == "milk") {
+        milkPaint();
+    }
+    else {
+        if (choice == "bag") {
+            cout << "the bag is empty :(\n";
+            return;
+        }
+    }
 }
 void house() {
     cout << "You enter the house. There are stairs to your Left. You can see a kitchen, and a dark room to your right.\n";
@@ -41,6 +51,7 @@ void house() {
         if (choice == "right")
         {
             grueDeath();
+
         }
         else
             if (choice == "kitchen")

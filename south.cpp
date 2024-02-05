@@ -7,6 +7,6 @@ void south() {
         grueQuest();
     }
     else {
-        grue_death();
+        grueDeath();
     }
 }
