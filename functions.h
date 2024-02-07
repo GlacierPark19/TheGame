@@ -1,4 +1,5 @@
 void takeInput() {
+    choiceEnum = 0; //This line *should* fix the South loop issue
     getline(cin, choice);
     transform(choice.begin(), choice.end(), choice.begin(), ::towlower);
     //This function fixes issues regarding capitilization.

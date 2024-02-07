@@ -4,13 +4,13 @@
 #include "Music.h" //NYI
 using namespace std;
 #include "vars.h" // VARs
+//Functions
+#include "functions.h"
+#include "definitions.h"
 //This section is for using external files. DO NOT place items AFTER the directions.
 //Deaths
 #include "death.h"
 #include "grue.h"
-//Functions
-#include "functions.h"
-#include "definitions.h"
 //Direction Declarations
 #include "north.cpp"
 #include "south.cpp"
@@ -31,8 +31,17 @@ void game() {
     //This is where it gets intresting. Nested if loops and checks are the only way I know how to do this thing
     takeInput();
     switch (choiceEnum) {
-    case 1: north(); case 2: south();  break;
-        printf("This dont exsist :(");
+    case 1: 
+        north(); 
+        break;
+    case 2: 
+        south();
+        break;
+    case 5:
+        return;
+    default:
+        return;
+    
     }
   /*  if (choice == "north")
     {

@@ -4,6 +4,8 @@ void grueDeath() {
 	cout << "GAME OVER.\n YOU HAVE BEEN EATEN BY A GRUE\n";
 	cout << "Your score is " << score << " points!"<<endl;
 	cout << "Would you like to play again?\n";
+	choiceEnum = 5;
+	return;
 }
 
 void milkPaint() {
@@ -13,5 +15,6 @@ void milkPaint() {
 	cout << "GAME OVER\n";
 	cout << "Your score is " << score << " points!" << endl;
 	cout << "Would you like to play again?\n";
-	main();
+	choiceEnum = 5;
+	return;
 }

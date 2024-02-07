@@ -14,6 +14,7 @@ void north() {
             cout << "Some sections of this game are not yet accessable.\n Sorry bout that...";
             cout << "There is also a flyer. It reads:\n";
             cout << "Shop LTTSTORE.com\n";
+            score = (score + 5);
             north();
            
         }
@@ -38,9 +39,22 @@ void kitchenHouse() {
     }
     else {
         if (choice == "bag") {
-            cout << "the bag is empty :(\n";
-            return;
+            cout << "the bag is empty :( \n";
+            cout << "But after consuming the bag, you find some points\n";
+            score = (score + 2);
+            kitchenHouse();
         }
+        else 
+            if (choice == "back") {
+            house();
+        }
+        else
+        {
+            cout << "Unrecognized Command";
+            kitchenHouse();
+        }
+        
+
     }
 }
 void house() {
@@ -61,6 +75,11 @@ void house() {
             if (choice == "kitchen")
             {
                 kitchenHouse();
+            }
+            else
+            {
+                cout << "Unrecognized Command\n";
+                house();
             }
 }
 
