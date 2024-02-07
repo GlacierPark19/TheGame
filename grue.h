@@ -24,5 +24,11 @@ void grueQuest() {
 
 
 void grueLand() {
+	clrscr();
+	grueLandAscii();
+	cout << "" << endl;
+	cout << "" << endl;
+	cout << "Welcome to adventures in GrueLand!\n";
+	cout << "Copyright 1995 BigGame Games\n";
 
 }
