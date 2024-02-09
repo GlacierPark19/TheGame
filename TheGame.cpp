@@ -1,15 +1,15 @@
 // HelloWorld.cpp : This file contains the 'main' function. Program execution begins and ends there.
 //This program was developed with assistance from W3 schools (w3schools.com/cpp)
-#include "libraries.h"
-#include "Music.h" //NYI
+#include "Depends/libraries.h"
+#include "Depends/Music.h" //NYI
 using namespace std;
-#include "vars.h" // VARs
+#include "Depends/vars.h" // VARs
 //Functions
-#include "functions.h"
-#include "definitions.h"
+#include "Depends/functions.h"
+#include "Depends/definitions.h"
 //This section is for using external files. DO NOT place items AFTER the directions.
 //Deaths
-#include "death.h"
+#include "Depends/death.h"
 #include "grue.h"
 //Direction Declarations
 #include "north.cpp"
