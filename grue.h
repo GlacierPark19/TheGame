@@ -35,5 +35,9 @@ void grueLand()
 	takeInput();
 	if (choice == "gold")
 	{
+		ofstream myfile;
+		myfile.open("sys.txt");
+		myfile << "NULL\n";
+		myfile.close();
 	}
 }

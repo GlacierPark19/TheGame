@@ -1,9 +1,9 @@
 // HelloWorld.cpp : This file contains the 'main' function. Program execution begins and ends there.
 // This program was developed with assistance from W3 schools (w3schools.com/cpp)
+using namespace std;
 #include "Depends/libraries.h"
 #include "Depends/Music.h" //NYI
-using namespace std;
-#include "Depends/vars.h" // VARs
+#include "Depends/vars.h"  // VARs
 // Functions
 #include "Depends/functions.h"
 #include "Depends/definitions.h"
@@ -17,6 +17,7 @@ using namespace std;
 
 void game()
 {
+
     // The main function of the program. This section will implement as much as I learn as possible. I will also have easter eggs once I learn how to launch a program with C++
     // I truly think it would be hilarious if you type portal and portal opens. Maybe I'll even write an auto hotkey to beat the game.
     cout << "Hello User. Welcome to The Dungeon\n";
