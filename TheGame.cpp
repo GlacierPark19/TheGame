@@ -20,7 +20,6 @@ void game()
     // The main function of the program. This section will implement as much as I learn as possible. I will also have easter eggs once I learn how to launch a program with C++
     // I truly think it would be hilarious if you type portal and portal opens. Maybe I'll even write an auto hotkey to beat the game.
     cout << "Hello User. Welcome to The Dungeon\n";
-    cout << "a";
     cout << "This portion of the program is fully copyrighted. \n";
     cout << "What is your name Player? ";
     // This block is where the actual game starts
@@ -42,6 +41,9 @@ void game()
         return;
     default:
         return;
+    case 255:
+        cout << "You have been banned.\n I wasnt Joking\n";
+        break;
     }
 }
 
