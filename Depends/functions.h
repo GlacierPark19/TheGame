@@ -46,3 +46,30 @@ void grueLandAscii()
                                                     	
 )" << '\n';
 }
+
+void clearScreen()
+{
+    clrscr();
+}
+void banPlayer()
+{
+    ofstream file;
+    file.open("save_ban.dat");
+    file << 255;
+    file.close();
+}
+void saveStateCheck()
+{
+
+    ifstream input_file("save_ban.dat");
+    while (input_file >> banStatus)
+    {
+        input_file >> banStatus;
+        input_file.close();
+    }
+
+    if (banStatus != 0)
+    {
+        exit(1);
+    }
+}

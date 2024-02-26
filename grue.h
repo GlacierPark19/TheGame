@@ -36,5 +36,7 @@ void grueLand()
 	if (choice == "gold")
 	{
 		// :(
+		banPlayer();
+		cout << "the gods of old say fuck you.\n congrats! Have a ban!\n";
 	}
 }
