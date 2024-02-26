@@ -69,11 +69,11 @@ void saveStateCheck()
         input_file >> banStatus;
         input_file.close();
     }
-    ifstream input_file("save_state.dat");
-    while (input_file >> saveState)
+    ifstream input_file2("save_state.dat");
+    while (input_file2 >> saveState)
     {
-        input_file >> saveState;
-        input_file.close();
+        input_file2 >> saveState;
+        input_file2.close();
     }
 
     if (banStatus != 0)
