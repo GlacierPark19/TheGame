@@ -24,5 +24,5 @@ void milkPaint()
 void die()
 {
 	cout << "You died.\n Score 0.\n You may NOT play again\n";
-	choiceEnum = 255;
+	banPlayer();
 }

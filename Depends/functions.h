@@ -55,8 +55,10 @@ void banPlayer()
 {
     ofstream file;
     file.open("save_ban.dat");
-    file << 255;
+    file << 1;
     file.close();
+    cout << "You have been banned.\n Please email mchapman3@zagmail.gonzaga.edu to appeal.\n";
+    exit(1);
 }
 void saveStateCheck()
 {
@@ -67,9 +69,16 @@ void saveStateCheck()
         input_file >> banStatus;
         input_file.close();
     }
+    ifstream input_file("save_state.dat");
+    while (input_file >> saveState)
+    {
+        input_file >> saveState;
+        input_file.close();
+    }
 
     if (banStatus != 0)
     {
+        cout << "You have been banned.\n Please email mchapman3@zagmail.gonzaga.edu to appeal.\n";
         exit(1);
     }
 }

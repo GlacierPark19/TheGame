@@ -48,9 +48,6 @@ void game()
         return;
     default:
         return;
-    case 255:
-        cout << "You have been banned.\n I wasnt Joking\n";
-        break;
     }
 }
 
