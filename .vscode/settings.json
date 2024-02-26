@@ -1,9 +1,3 @@
 {
-    "cmake.configureOnOpen": true,
-    "files.associations": {
-        "cstdbool": "cpp",
-        "iostream": "cpp",
-        "*.tcc": "cpp",
-        "fstream": "cpp"
-    }
+"isGitignoreExtActive": true,
 }
