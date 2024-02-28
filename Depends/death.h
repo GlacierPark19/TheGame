@@ -1,5 +1,22 @@
 // This file handles deaths. Exsists to make life "easy"
-
+void deathFinalization()
+{
+	// This function cleans up the code. I reccomend using it.
+	saveGame();
+	score = 0;
+	choiceEnum = 0;
+	savePoint = 0;
+	saveState = 0;
+	takeInput();
+	if (choice != "yes")
+	{
+		exit(0);
+	}
+	else
+	{
+		main();
+	}
+}
 void grueDeath()
 {
 	cout << "GAME OVER.\n YOU HAVE BEEN EATEN BY A GRUE\n";

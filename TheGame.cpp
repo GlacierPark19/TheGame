@@ -5,6 +5,7 @@ using namespace std;
 #include "Depends/Music.h" //NYI
 #include "Depends/vars.h"  // VARs
 // Functions
+#include "Depends/work.h"
 #include "Depends/functions.h"
 #include "Depends/definitions.h"
 // This section is for using external files. DO NOT place items AFTER the directions.
