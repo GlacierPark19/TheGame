@@ -17,7 +17,6 @@ using namespace std;
 
 void game()
 {
-
     // The main function of the program. This section will implement as much as I learn as possible. I will also have easter eggs once I learn how to launch a program with C++
     // I truly think it would be hilarious if you type portal and portal opens. Maybe I'll even write an auto hotkey to beat the game.
     clearScreen();
@@ -40,12 +39,13 @@ void game()
     case 2:
         south();
         break;
-    case 3:
-        break;
-    case 4:
-        break;
-    case 5:
-        return;
+        /* case 3:
+             break;
+         case 4:
+             break;
+         case 5:
+             return;
+         */
     default:
         return;
     }

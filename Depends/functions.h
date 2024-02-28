@@ -1,12 +1,14 @@
 void takeInput()
 {
-    choiceEnum = 0; // This line *should* fix the South loop issue
+    // NOTE: This function is a Quasi-Generic Cleaner, as it is called a LOT. DO NOT CHANGE VARIABLE DEFINITIONS WITHIN.
+    choiceEnum = 0; // This line fixes some looping issues that can occur.
+                    // Take User input
     getline(cin, choice);
-    transform(choice.begin(), choice.end(), choice.begin(), ::towlower);
     // This function fixes issues regarding capitilization.
+    transform(choice.begin(), choice.end(), choice.begin(), ::towlower);
 
-    // This is where things get strange. In order to simplify my life, I am going to try pseudo-enumeration
-    // The function below *should* run with every takeInput, converting directions to an integer.
+    // The following switchcase assigns directions with numbers. This is to allow for more flexibility with the code. In theory, ANYTHING
+    // Can be assigned here.
     if (choice == "north")
     {
         choiceEnum = 1;
@@ -22,6 +24,15 @@ void takeInput()
     else if (choice == "west")
     {
         choiceEnum = 4;
+    }
+    else if (choice == "look")
+    {
+        choiceEnum = 5;
+    }
+    else if (choice == "exit")
+    {
+        saveGame();
+        exit(0);
     }
     else
     {
@@ -60,6 +71,14 @@ void banPlayer()
     cout << "You have been banned.\n Please email mchapman3@zagmail.gonzaga.edu to appeal.\n";
     exit(1);
 }
+void saveGame()
+{
+    ofstream file;
+    file.open("save_state.dat");
+    file << savePoint;
+    file.close();
+    cout << "Game saved!\n";
+}
 void saveStateCheck()
 {
 
@@ -80,5 +99,18 @@ void saveStateCheck()
     {
         cout << "You have been banned.\n Please email mchapman3@zagmail.gonzaga.edu to appeal.\n";
         exit(1);
+    }
+
+    switch (saveState)
+    {
+    case 1:
+        north();
+        break;
+    case 2:
+        south();
+        break;
+    case 3:
+        grueLand();
+        break;
     }
 }

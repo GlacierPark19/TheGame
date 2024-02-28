@@ -7,6 +7,7 @@ void kitchenHouse();
 
 void north()
 {
+    savePoint = 1;
     cout << "You head north. There is a mailbox in front of you. You can continue North to reach a house.\n";
     cout << "You can also read the mail.\n";
     takeInput();
