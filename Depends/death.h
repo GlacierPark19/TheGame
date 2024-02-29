@@ -23,7 +23,16 @@ void grueDeath()
 	cout << "Your score is " << score << " points!" << endl;
 	cout << "Would you like to play again?\n";
 	choiceEnum = 5;
-	return;
+	deathFinalization();
+}
+
+void death()
+{
+	cout << "GAME OVER.\n YOU HAVE DIED\n";
+	cout << "Your score is " << score << " points!" << endl;
+	cout << "Would you like to play again?\n";
+	choiceEnum = 5;
+	deathFinalization();
 }
 
 void milkPaint()
@@ -35,7 +44,7 @@ void milkPaint()
 	cout << "Your score is " << score << " points!" << endl;
 	cout << "Would you like to play again?\n";
 	choiceEnum = 5;
-	return;
+	deathFinalization();
 }
 
 void die()

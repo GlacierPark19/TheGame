@@ -36,9 +36,11 @@ void game()
     {
     case 1:
         north();
+        exit(1);
         break;
     case 2:
         south();
+        exit(1);
         break;
         /* case 3:
              break;

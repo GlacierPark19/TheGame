@@ -34,6 +34,9 @@ void north()
 
 void stairsHouse()
 {
+    cout << "You climb the stairs. Sadly, there was a nail\n. You now have foot pain. Loose 69 points\n";
+    score = score - 69;
+    house();
 }
 void kitchenHouse()
 {

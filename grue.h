@@ -24,6 +24,8 @@ void grueQuest()
 
 void grueLand()
 {
+	savePoint = 3;
+	saveGame();
 	clrscr();
 	grueLandAscii();
 	cout << "" << endl;
@@ -38,5 +40,13 @@ void grueLand()
 		// :(
 		banPlayer();
 		cout << "the gods of old say fuck you.\n congrats! Have a ban!\n";
+	}
+	else
+	{
+		cout << "You glow with a golden light as god himeself kisses your toe\n";
+		cout << "Unfortunatley, Your toe is now on fire.\n Have some points\n";
+		score = score + rand() * 2.55;
+		cout << "Sadly, you died from god. Oof\n";
+		death();
 	}
 }
