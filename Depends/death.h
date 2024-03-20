@@ -8,19 +8,19 @@ void deathFinalization()
 	savePoint = 0;
 	saveState = 0;
 	takeInput();
-	if (choice != "yes")
+	if (choice == "yes")
 	{
-		exit(0);
+		game();
 	}
 	else
 	{
-		main();
+		exit(0);
 	}
 }
 void grueDeath()
 {
 	cout << "GAME OVER.\n YOU HAVE BEEN EATEN BY A GRUE\n";
-	cout << "Your score is " << score << " points!" << endl;
+	scoreCheck();
 	cout << "Would you like to play again?\n";
 	choiceEnum = 5;
 	deathFinalization();
@@ -29,7 +29,7 @@ void grueDeath()
 void death()
 {
 	cout << "GAME OVER.\n YOU HAVE DIED\n";
-	cout << "Your score is " << score << " points!" << endl;
+	scoreCheck();
 	cout << "Would you like to play again?\n";
 	choiceEnum = 5;
 	deathFinalization();
@@ -41,7 +41,7 @@ void milkPaint()
 	cout << "\"son. Whatever you do, never drink milk. It oculd be paint\"" << endl;
 	cout << "As you ponder your fathers wise words regarding milk and paint, a Grue eats you." << endl;
 	cout << "GAME OVER\n";
-	cout << "Your score is " << score << " points!" << endl;
+	scoreCheck();
 	cout << "Would you like to play again?\n";
 	choiceEnum = 5;
 	deathFinalization();

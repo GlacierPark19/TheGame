@@ -65,37 +65,41 @@ void clearScreen()
 void banPlayer()
 {
     ofstream file;
-    file.open("save_ban.dat");
-    file << 1;
+    file.open("save.dat");
+    file << 18 << endl;
     file.close();
     cout << "You have been banned.\n Please email mchapman3@zagmail.gonzaga.edu to appeal.\n";
     exit(1);
 }
 void saveGame()
 {
+    if (score > lastHighScore)
+    {
+        newHighScore = score;
+    }
+    else
+    {
+    }
     ofstream file;
-    file.open("save_state.dat");
-    file << savePoint;
+    file.open("save.dat");
+    file << endl
+         << savePoint
+         << endl
+         << newHighScore;
     file.close();
     cout << "Game saved!\n";
 }
 void saveStateCheck()
 {
 
-    ifstream input_file("save_ban.dat");
-    while (input_file >> banStatus)
-    {
-        input_file >> banStatus;
-        input_file.close();
-    }
-    ifstream input_file2("save_state.dat");
-    while (input_file2 >> saveState)
-    {
-        input_file2 >> saveState;
-        input_file2.close();
-    }
+    ifstream file;
+    file.open("save.dat");
+    file >> banStatus;
+    file >> saveState;
+    file >> lastHighScore;
+    file.close();
 
-    if (banStatus != 0)
+    if (banStatus == 18)
     {
         cout << "You have been banned.\n Please email mchapman3@zagmail.gonzaga.edu to appeal.\n";
         exit(1);
@@ -112,5 +116,18 @@ void saveStateCheck()
     case 3:
         grueLand();
         break;
+    }
+}
+
+void scoreCheck()
+{
+    if (score > lastHighScore)
+    {
+        cout << "Congratulations! New High Score! " << endl;
+        newHighScore = score;
+    }
+    else
+    {
+        cout << "Your score was: " << score << ". The High score is: " << lastHighScore << endl;
     }
 }

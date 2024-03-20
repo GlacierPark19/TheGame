@@ -1,6 +1,6 @@
 string userInput;
 string choice;
-float score;
+float score, lastHighScore, newHighScore;
 string name;
 int choiceEnum;
 double banStatus;
