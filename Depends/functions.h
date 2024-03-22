@@ -27,7 +27,7 @@ void takeInput()
     }
     else if (choice == "look")
     {
-        choiceEnum = 5;
+        // TODO: Eyes
     }
     else if (choice == "exit")
     {
@@ -73,6 +73,9 @@ void banPlayer()
 }
 void saveGame()
 {
+    // The save game file is a basic text file that contains variables I need to conserve
+    // The order of things matters. After EVERY variable you add, add an "endl" so that we dont have errors
+    // Thanks
     if (score > lastHighScore)
     {
         newHighScore = score;
@@ -82,10 +85,10 @@ void saveGame()
     }
     ofstream file;
     file.open("save.dat");
-    file << endl
-         << savePoint
+    file << endl      // Ban Status
+         << savePoint // Save State
          << endl
-         << newHighScore;
+         << newHighScore; // High Score (Duh)
     file.close();
     cout << "Game saved!\n";
 }
