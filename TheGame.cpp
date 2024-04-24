@@ -1,9 +1,11 @@
 // This is the core game file. It does not much
 // This program was developed with assistance from W3 schools (w3schools.com/cpp)
+// The JSON Library is from https://github.com/nlohmann/json. Used with MANY Thanks!
 using namespace std;
 #include "Depends/libraries.h"
 #include "Depends/Music.h" //NYI
 #include "Depends/vars.h"  // VARs
+using json = nlohmann::json;
 // Functions
 #include "Depends/work.h"
 #include "Depends/functions.h"
@@ -12,6 +14,7 @@ using namespace std;
 // Deaths
 #include "Depends/death.h"
 #include "grue.h"
+#include "sceneDesriptor.h"
 // Direction Declarations
 #include "north.cpp"
 #include "south.cpp"
