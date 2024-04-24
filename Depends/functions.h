@@ -119,6 +119,8 @@ void saveStateCheck()
     case 3:
         grueLand();
         break;
+    default:
+        break;
     }
 }
 
