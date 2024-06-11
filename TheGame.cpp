@@ -3,13 +3,13 @@
 // The JSON Library is from https://github.com/nlohmann/json. Used with MANY Thanks!
 using namespace std;
 #include "Depends/libraries.h"
-#include "Depends/Music.h" //NYI
-#include "Depends/vars.h"  // VARs
-using json = nlohmann::json;
+
+#include "Depends/vars.h" // VARs
 // Functions
 #include "Depends/work.h"
-#include "Depends/functions.h"
+#include "Functions/functions.cpp"
 #include "Depends/definitions.h"
+#include "Functions/Scenes.cpp"
 // This section is for using external files. DO NOT place items AFTER the directions.
 // Deaths
 #include "Depends/death.h"
