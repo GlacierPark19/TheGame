@@ -23,5 +23,8 @@ void commandInterpriter()
             currentWord += input[i];
         }
     }
+    // We now know all the words in the input string.
+
+    // We can use the actions map to determine what the user wants to do.
 }
 }
