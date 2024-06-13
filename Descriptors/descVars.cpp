@@ -1,0 +1,1 @@
+string descriptorsFile = "Descriptors/library.desc";

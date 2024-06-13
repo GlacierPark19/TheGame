@@ -3,8 +3,5 @@
 #include <iostream>
 #include <string>
 #include <vector>
-using namespace std;
-#include "dictionaries.h"
-#include "commandInerpriter.h"
-
+#include <stdio.h>
 #endif
